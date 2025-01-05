@@ -24,11 +24,11 @@ export const POST = async (request: Request) => {
     await newUser.save();
     return NextResponse.json({ message: "User registered successfully" }, { status: 200 });
   } catch (error) {
-    // Narrow the type of the error
+   
     if (error instanceof Error) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
-    // Handle unexpected error types
+    
     return NextResponse.json({ error: "An unknown error occurred" }, { status: 500 });
   }
 };

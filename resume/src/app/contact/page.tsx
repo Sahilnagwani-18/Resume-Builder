@@ -8,10 +8,9 @@ import {
 export default function Contact() {
   return (
     <div className="relative max-w-7xl mx-auto py-10 px-6">
-      {/* Background Image */}
+     
       <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: "url('your-background-image-url.jpg')" }}></div>
 
-      {/* Content */}
       <div className="relative z-10 bg-black bg-opacity-40 backdrop-blur-lg rounded-lg shadow-xl p-8">
         <h1 className="text-4xl font-extrabold mb-6 text-center text-white drop-shadow-md">Contact Us</h1>
         <p className="text-lg text-center text-gray-200 mb-8">Reach out to us with any questions or concerns. We're here to assist you!</p>

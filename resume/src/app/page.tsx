@@ -26,9 +26,9 @@ export default function Home() {
         </button>
       </nav>
 
-      {/* Main Section */}
+     
       <div className="flex flex-col items-center justify-center text-center px-6">
-        {/* Glass Effect Container */}
+       
         <div className="bg-black/60 backdrop-blur-md rounded-lg p-8 shadow-2xl max-w-lg w-full">
           <h1 className="text-4xl sm:text-4xl font-extrabold text-white drop-shadow-lg mb-4">
             Get Started!!
@@ -50,7 +50,7 @@ export default function Home() {
               <button className="bg-green-500 text-white font-semibold px-10 py-2 rounded-md hover:bg-green-600 transition">
                 Start!!
               </button>
-              {/* Hover Message */}
+              
               <span className="absolute left-0 right-0 top-full mt-2 text-sm text-red-700 bg-black/70 px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
                 You can explore the dashboard, but downloading resumes requires logging in.
               </span>

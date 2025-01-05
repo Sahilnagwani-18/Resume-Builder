@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-// Define the IExperience, IProject, and ISkill interfaces as they were
+
 interface IExperience {
   name: string;
   dateStart: string;
@@ -25,8 +25,8 @@ interface ISkill {
 interface IResume extends Document {
    userId: String;
   _id: string;
-  createdAt: Date;    // Automatically managed by Mongoose
-  updatedAt: Date;    // Automatically managed by Mongoose
+  createdAt: Date;    
+  updatedAt: Date;    
   name: string;
   degree: string;
   course: string;
@@ -88,7 +88,7 @@ const resumeSchema = new Schema<IResume>(
     achievements: [String],
     responsibilities: [String],
   },
-  { timestamps: true } // Automatically manage `createdAt` and `updatedAt`
+  { timestamps: true } 
 );
 
 export default mongoose.models.Resume || mongoose.model<IResume>("Resume", resumeSchema);

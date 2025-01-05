@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
           At Unified Resume Builder, we take your privacy seriously. This policy outlines the types of information we collect, how we use it, and the steps we take to ensure that your data is secure. By using our service, you agree to the practices described in this Privacy Policy.
         </p>
 
-        {/* Section 1: Information We Collect */}
+       
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4"> Information We Collect</h2>
           <p className="text-lg mb-4">
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           </ul>
         </section>
 
-        {/* Section 2: How We Use Your Information */}
+   
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
           <p className="text-lg mb-4">
@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
           </ul>
         </section>
 
-        {/* Section 3: Data Security */}
+       
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
           <p className="text-lg mb-4">
@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
           </ul>
         </section>
 
-        {/* Section 4: Sharing Your Data */}
+      
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Sharing Your Data</h2>
           <p className="text-lg mb-4">
@@ -63,7 +63,6 @@ export default function PrivacyPolicy() {
           </ul>
         </section>
 
-        {/* Section 5: Your Rights */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Your Rights</h2>
           <p className="text-lg mb-4">
@@ -77,7 +76,7 @@ export default function PrivacyPolicy() {
           </ul>
         </section>
 
-        {/* Section 6: Contact Us */}
+      
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="text-lg mb-4">

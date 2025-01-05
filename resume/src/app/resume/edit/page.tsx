@@ -4,10 +4,9 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function EditResume() {
-  const [id, setId] = useState(""); // State to store the input value
+  const [id, setId] = useState("");
   const router = useRouter();
 
-  // Handle navigation when user clicks "Go to Edit"
   const handleNavigate = () => {
     if (id) {
       router.push(`/resume/edit/${id}`);

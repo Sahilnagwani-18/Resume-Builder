@@ -3,20 +3,18 @@ import Link from "next/link";
 export default function HelpCenter() {
     return (
         <div className="relative max-w-7xl mx-auto py-10 px-6 text-white">
-            {/* Background Image */}
             <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: "url('your-background-image-url.jpg')" }}></div>
             
-            {/* Content */}
             <div className="relative z-10 bg-black bg-opacity-40 backdrop-blur-lg rounded-lg shadow-xl p-6">
-                {/* Page Header */}
+                
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-extrabold mb-4 text-white drop-shadow-md">Help Center</h1>
                     <p className="text-lg font-medium text-gray-200">Have questions? We're here to assist you in any way possible.</p>
                 </div>
 
-                {/* Help Section */}
+               
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    {/* Help Topic 1 */}
+                   
                     <div className="p-8 border rounded-lg shadow-xl backdrop-blur-lg bg-black/40 hover:shadow-2xl transition duration-300 w-[90%] mx-auto">
                         <h2 className="text-2xl font-bold text-indigo-300 mb-4">How do I create a resume?</h2>
                         <p className="text-lg text-gray-200 mb-4">
@@ -24,7 +22,7 @@ export default function HelpCenter() {
                         </p>
                     </div>
 
-                    {/* Help Topic 2 */}
+                    
                     <div className="p-8 border rounded-lg shadow-xl backdrop-blur-lg bg-black/40 hover:shadow-2xl transition duration-300 w-[90%] mx-auto">
                         <h2 className="text-2xl font-bold text-indigo-300 mb-4">Can I edit my resume after saving?</h2>
                         <p className="text-lg text-gray-200 mb-4">
@@ -33,9 +31,8 @@ export default function HelpCenter() {
                     </div>
                 </div>
 
-                {/* Additional Help Topics */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    {/* Help Topic 3 */}
+                    
                     <div className="p-8 border rounded-lg shadow-xl backdrop-blur-lg bg-black/40 hover:shadow-2xl transition duration-300 w-[90%] mx-auto">
                         <h2 className="text-2xl font-bold text-indigo-300 mb-4">Can I download my resume in different formats?</h2>
                         <p className="text-lg text-gray-200 mb-4">
@@ -43,7 +40,6 @@ export default function HelpCenter() {
                         </p>
                     </div>
 
-                    {/* Help Topic 4 */}
                     <div className="p-8 border rounded-lg shadow-xl backdrop-blur-lg bg-black/40 hover:shadow-2xl transition duration-300 w-[90%] mx-auto">
                         <h2 className="text-2xl font-bold text-indigo-300 mb-4">Do you offer any resume templates?</h2>
                         <p className="text-lg text-gray-200 mb-4">
@@ -52,7 +48,6 @@ export default function HelpCenter() {
                     </div>
                 </div>
 
-                {/* Contact Assistance Section */}
                 <div className="p-8 border rounded-lg shadow-xl backdrop-blur-lg bg-black/40 hover:shadow-2xl transition duration-300 w-[90%] mx-auto">
                     <h2 className="text-2xl font-bold text-indigo-300 mb-4">Need further assistance?</h2>
                     <p className="text-lg text-gray-200 mb-4">

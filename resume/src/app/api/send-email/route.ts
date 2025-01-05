@@ -15,33 +15,29 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       return res.status(400).json({ error: 'A valid email is required' });
     }
 
-    const client = new MongoClient(process.env.MONGODB_URL!);  // Use the correct MongoDB URI environment variable
+    const client = new MongoClient(process.env.MONGODB_URL!);  
 
     try {
-      // Connect to MongoDB
       await client.connect();
-      const db = client.db(); // Connect to the default database
-      const collection = db.collection('subscriptions'); // MongoDB collection to store emails
+      const db = client.db();
+      const collection = db.collection('subscriptions'); 
 
-      // Check if the email is already in the database
       const existingEmail = await collection.findOne({ email });
       if (existingEmail) {
         return res.status(400).json({ error: 'Email is already subscribed' });
       }
 
-      // Save the email to the database
       await collection.insertOne({ email, subscribedAt: new Date() });
 
-      // Set up Nodemailer transporter
       const transporter = nodemailer.createTransport({
-        service: 'Gmail', // Using Gmail as the email service
+        service: 'Gmail', 
         auth: {
-          user: process.env.EMAIL_USER, // Your email address
-          pass: process.env.EMAIL_PASS, // Your app password (not the regular Gmail password)
+          user: process.env.EMAIL_USER, 
+          pass: process.env.EMAIL_PASS, 
         },
       });
 
-      // Send confirmation email
+   
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
         to: email,
@@ -54,7 +50,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       console.error('Error sending email or interacting with MongoDB:', error);
       return res.status(500).json({ error: 'An internal error occurred' });
     } finally {
-      // Close the MongoDB connection
+   
       await client.close();
     }
   } else {

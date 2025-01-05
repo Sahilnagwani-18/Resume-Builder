@@ -4,7 +4,6 @@ export default function TermsOfService() {
       <div className="max-w-7xl mx-auto py-10 px-6 bg-opacity-60 backdrop-blur-md rounded-lg bg-black">
         <h1 className="text-3xl font-bold mb-8 text-center">Terms of Service</h1>
 
-        {/* Section 1: Terms on Left, Image on Right */}
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">General Terms</h2>
@@ -22,20 +21,19 @@ export default function TermsOfService() {
           </div>
           <div className="md:w-1/2 md:pl-6 mt-6 md:mt-0">
             <img
-              src="/images/img1TOS.jpg" // Corrected the path to the public folder
+              src="/images/img1TOS.jpg" 
               alt="Example Resume"
-              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" // Responsive height
+              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" 
             />
           </div>
         </div>
 
-        {/* Section 2: Image on Left, Terms on Right */}
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2 md:pr-6 mt-6 md:mt-0">
             <img
-              src="/images/img2TOS.png" // Corrected image path
+              src="/images/img2TOS.png" 
               alt="Example Resume"
-              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" // Responsive height
+              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" 
             />
           </div>
           <div className="md:w-1/2">
@@ -51,7 +49,6 @@ export default function TermsOfService() {
           </div>
         </div>
 
-        {/* Section 3: Terms on Left, Image on Right */}
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">Prohibited Activities</h2>
@@ -66,20 +63,19 @@ export default function TermsOfService() {
           </div>
           <div className="md:w-1/2 md:pl-6 mt-6 md:mt-0">
             <img
-              src="/images/img3TOS.jpg" // Corrected image path
+              src="/images/img3TOS.jpg" 
               alt="Example Resume"
-              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" // Responsive height
+              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]"
             />
           </div>
         </div>
 
-        {/* Section 4: Image on Left, Terms on Right */}
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-6 mt-6 md:mt-0">
             <img
-              src="/images/img4TOS.jpg" // Corrected image path
+              src="/images/img4TOS.jpg" 
               alt="Example Resume"
-              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" // Responsive height
+              className="rounded-lg shadow-md object-cover w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[350px]" 
             />
           </div>
           <div className="md:w-1/2">

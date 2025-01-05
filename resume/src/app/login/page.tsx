@@ -5,7 +5,7 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
-// Tailwind CSS classes with glass effect and background image
+
 const loginContainer =
   "flex min-h-screen flex-col items-center justify-center py-16 bg-cover bg-center bg-[url('/images/login.jpeg')]"; // Replace with your image path
 const loginForm =

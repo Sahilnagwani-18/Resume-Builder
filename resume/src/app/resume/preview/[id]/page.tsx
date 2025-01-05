@@ -3,8 +3,8 @@
 import { useParams } from "next/navigation";
 
 export default function PreviewResume() {
-  const params = useParams(); // Access dynamic route params
-  const id = params?.id; // Safely access `id`
+  const params = useParams();
+  const id = params?.id;
 
   return (
     <div className="text-center mt-12">

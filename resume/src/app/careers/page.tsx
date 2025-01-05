@@ -108,7 +108,6 @@ export default function Careers() {
               </div>
           </div>
 
-          {/* Join Our Team Section */}
           <div className="mt-10 text-center">
               <h2 className="text-2xl font-semibold mb-4">Why Join Us?</h2>
               <p className="text-lg text-gray-200 mb-4">

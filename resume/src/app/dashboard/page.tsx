@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { useSession } from "next-auth/react"; // Import the useSession hook
-import Link from "next/link"; // Import Link for navigation
+import { useSession } from "next-auth/react"; 
+import Link from "next/link"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dashboard() {
-  const { data: session } = useSession(); // Get session data (logged-in status)
+  const { data: session } = useSession(); 
 
   return (
     <div className="min-h-screen flex flex-col">

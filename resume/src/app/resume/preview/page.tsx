@@ -17,7 +17,7 @@ const ResumePreviewPage = () => {
     const fetchResumes = async () => {
       try {
         const response = await axios.get('/api/resumes/route.tsx');
-        console.log(response.data); // Log the data to check if it's being fetched correctly
+        console.log(response.data); 
         setResumes(response.data);
       } catch (error) {
         console.error('Error fetching resumes:', error);

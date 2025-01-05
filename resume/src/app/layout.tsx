@@ -12,10 +12,10 @@ const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      {/* Conditionally render NavBar */}
+      
       {showHeaderFooter && <NavBar />}
       <main>{children}</main>
-      {/* Conditionally render Footer */}
+      
       {showHeaderFooter && <Footer />}
     </>
   );
@@ -29,7 +29,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className="min-h-screen bg-cover bg-center flex flex-col"
           style={{ backgroundImage: "url('/images/Dash.jpeg')" }}
         >
-          {/* Provide session context to the application */}
           <SessionProvider>
             <LayoutWrapper>{children}</LayoutWrapper>
           </SessionProvider>
